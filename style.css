@@ -62,6 +62,7 @@ textarea{
 
 textarea{
   min-height: 10rem;
+  width: fixed;
 }
 
 select{
@@ -92,4 +93,25 @@ input[type="checkbox"]:checked {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+}
+
+.large-label{
+    display:inline-block ;
+    font: bold 1.5rem sans-serif;
+    margin-bottom: 0.5rem;
+}
+/* place holder editing */
+input::placeholder,
+textarea::placeholder{
+opacity: 1;
+color: hsl(213, 73%,50%);
+}
+
+button{
+    font: 1.25rem sans-serif;
+    border: radius 0.25rem;
+    cursor: pointer;
+    padding: 0.75rem 1.25rem;
+    background-color: blue;
+    color: azure;
 }
